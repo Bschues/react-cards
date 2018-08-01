@@ -2,15 +2,23 @@
   "name": "react-cards",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Bschues.github.io/react-cards",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:Bschues/react-cards.git",
+  "author": "bschue <bschuess3@gmail.com>",
+  "license": "MIT"
 }
